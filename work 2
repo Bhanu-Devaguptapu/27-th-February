@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,r,sum=0;
+printf("Enter the n value:");
+scanf("%d",&n);
+while(n!=0)
+{
+ r=n%10;
+ n=n/10;
+ sum=sum+r;
+}
+while(sum>9)
+{
+	r=sum%10;
+	sum=sum/10;
+	sum=sum+r;
+}
+printf("%d",sum);
+return 0;
+}
